@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { SearchContext } from '../context/SearchContext'
 
-const SearchBar = () => {
-    const {term, handleSearch} = useContext(SearchContext)
+const SearchBar = (props) => {
+    let {term, handleSearch} = useContext(SearchContext)
 
     return (
             <form>
